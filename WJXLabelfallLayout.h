@@ -8,23 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@class WJXWaterfallLayout;
+@class WJXLabelfallLayout;
 
 @protocol  WJXWaterfallLayoutDeleaget<NSObject>
 
 
 @required
 /**
- * 每个item的高度
+ * 每个item的宽度
  */
-- (CGFloat)waterFallLayout:(WJXWaterfallLayout *)waterFallLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)waterFallLayout:(WJXLabelfallLayout *)waterFallLayout WidthForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 
 @end
 
-@interface WJXWaterfallLayout : UICollectionViewFlowLayout
+@interface WJXLabelfallLayout : UICollectionViewFlowLayout
 
-@property (nonatomic, assign) NSInteger items;                                 //行数
 
 @property (nonatomic, weak) id<WJXWaterfallLayoutDeleaget> delegate;
 
