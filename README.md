@@ -16,10 +16,10 @@
 
    ## 演示代码
    ```swift
-   - (WJXWaterfallLayout *)flowlayout
+   - (WJXLabelfallLayout *)flowlayout
    {
        if (!_flowlayout) {
-           _flowlayout = [[WJXWaterfallLayout alloc] init];
+           _flowlayout = [[WJXLabelfallLayout alloc] init];
            _flowlayout.minimumInteritemSpacing = 0;
            _flowlayout.minimumLineSpacing = 0;
            _flowlayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
